@@ -16,7 +16,7 @@ func main() {
 	// 命令行参数
 	var (
 		addr      = flag.String("addr", ":8080", "服务器监听地址")
-		rateLimit = flag.Float64("rate", 30.0, "速率限制（请求/秒）")
+		rateLimit = flag.Float64("rate", 10.0, "速率限制（请求/秒）")
 		capacity  = flag.Int("capacity", 50, "令牌桶容量")
 	)
 	flag.Parse()
